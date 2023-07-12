@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav {
+  height: 4vmax;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+.left {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.left a {
+  text-decoration: none;
+  color: crimson;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2vmax;
+  font-weight: 700;
+}
+.middle {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+.middle a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.4vmax;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle a:hover {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.right img {
+  width: 2.5vmax;
+}
+.home {
+  height: 90vh;
+  background-image: radial-gradient(rgb(166, 151, 206), rgb(184, 184, 223));
+  display: flex;
+}
+.container {
+  width: 100%;
+}
+#rigthcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+#rigthcontainer img {
+  margin-right: 7vmax;
+  filter: drop-shadow(0 0 20px black);
+}
+#leftcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax;
+  box-sizing: border-box;
+}
+#leftcontainer h1 {
+  font-size: 5vmax;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#leftcontainer h2 {
+  font-size: 1.4vmax;
+  font-family: monospace;
+}
+#leftcontainer button {
+  width: 11vmax;
+  padding: 1vmax;
+  border: none;
+  border-radius: 2vmax;
+  background-color: rgb(168, 40, 66);
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  font-size: 1vmax;
+}
+#leftcontainer button:hover {
+  background-color: crimson;
+}
+/* #products {
+  height: 100vh;
+} */
+#products h1 {
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2.5vmax;
+  width: 25vw;
+  padding: 1vmax;
+}
+
+.productContainer {
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+.product {
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    
+  }
+  .product  img {
+    width: 20vmax;
+    border-radius: 2vmax;
+  }
+  
+  .product  h4 {
+    margin: 2%;
+  }
+  .product  h5 {
+    margin: 0px;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+  }
+
+  footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: crimson;
+  }
+  .midFooter > p {
+    max-width: 60%;
+  
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    margin: 0.5vmax;
+  }
